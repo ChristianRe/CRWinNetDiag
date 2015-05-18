@@ -44,6 +44,7 @@ namespace WinNetDiag
     {
         const string LocalSystemKey = "SYSTEM\\CurrentControlSet\\Control\\Class";
         const string LocalSystemKey1 = "SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters";
+        const string LocalSystemKey2 = "SYSTEM\\CurrentControlSet\\Services\\Tcpip6\\Parameters";
 
         //private RegistryKey myRegKey;
         private string mySearchKey;
@@ -64,6 +65,11 @@ namespace WinNetDiag
             myNetworkInfo = myNetworkInfo + myParser1.WriteAllParms();
             myNetworkInfo = myNetworkInfo + "      " + "\r\n";
 
+
+            myNetworkInfo = myNetworkInfo + fillStringwWithChars("=", 38, "=") + fillStringwWithChars(" TCPIP6 Konfig ", 42, "=") + "\r\n";
+            RegParser myParser2 = new RegParser(LocalSystemKey2, "Parameters");
+            myNetworkInfo = myNetworkInfo + myParser2.WriteAllParms();
+            myNetworkInfo = myNetworkInfo + "      " + "\r\n";
   
 
             foreach (NetworkInterface myNic in nics)
