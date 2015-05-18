@@ -1,7 +1,7 @@
  chcp 1252
 rem chcp 858
 rem ReadMe:
-rem CRWinNetDiag.exe Version 0.2.5
+rem CRWinNetDiag.exe Version 0.25
 rem Beta Software
 rem CRWinNetDiag; The Tool collects TCP/IP Information for futher Analysis
 rem Copyright (C) 2015  Christian Reusch

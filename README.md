@@ -1,5 +1,5 @@
 ## CRWinNetDiag
-Version 0.24; Public Beta Test
+Version 0.25; Public Beta Test
 
 ##Licence
 CRWinNetDiag; The Tool collects TCP/IP Information for futher Analysis
