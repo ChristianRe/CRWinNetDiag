@@ -1,0 +1,10 @@
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.exe.config
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.exe.manifest
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.application
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.exe
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.pdb
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.TrustInfo.xml
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.exe.manifest
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.application
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.exe
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.pdb
