@@ -32,6 +32,6 @@ Gewährleistung der MARKTFAEHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
 Siehe die GNU General Public License für weitere Details.
 
 # Start the programm
-The executable resides here ./bin/CRWinNetDiag.exe it needs at least .net3.5 to run.
+The executable resides here ./bin/Release/CRWinNetDiag.exe it needs at least .net3.5 to run.
 
 
