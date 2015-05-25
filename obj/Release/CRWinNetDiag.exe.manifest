@@ -57,14 +57,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CRWinNetDiag.exe" size="11776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CRWinNetDiag.exe" size="12288">
       <assemblyIdentity name="CRWinNetDiag" version="0.0.2.4" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2deCnzYg+OqFNxhmNqM6x0x4zDw=</dsig:DigestValue>
+        <dsig:DigestValue>2JO/Uj+xMpb/cton9csLSfDnrmI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

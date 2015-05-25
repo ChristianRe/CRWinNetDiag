@@ -139,6 +139,7 @@ namespace WinNetDiag
             string[] myValueNames;
             string[] myEnumValueNames;
             RegistryKey myParams;
+            RegistryKey myParams1;
             RegistryKey mySpecificParam = null;
             RegistryKey myEnum;
 
@@ -146,8 +147,12 @@ namespace WinNetDiag
 
             if (membRegSubKeyByNetCfgID != null)
             {
-                myParams = membRegSubKeyByNetCfgID.OpenSubKey("Ndi");
-                myParams = myParams.OpenSubKey("Params");
+                myParams1 = membRegSubKeyByNetCfgID.OpenSubKey("Ndi");
+                myParams = myParams1.OpenSubKey("Params");
+                // for Intel driver
+                if (myParams == null)
+                { myParams = myParams1.OpenSubKey("savedParams"); }
+
 
                 myValueNames = membRegSubKeyByNetCfgID.GetValueNames();
                 myValues = new string[membRegSubKeyByNetCfgID.ValueCount, 2];

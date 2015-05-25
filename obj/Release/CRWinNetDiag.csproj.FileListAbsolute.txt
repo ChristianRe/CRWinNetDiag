@@ -8,3 +8,4 @@ C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.application
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.exe
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.pdb
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.csprojResolveAssemblyReference.cache
