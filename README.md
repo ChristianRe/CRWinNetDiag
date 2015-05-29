@@ -1,5 +1,5 @@
 ## CRWinNetDiag
-Version 0.26; Public Beta Test
+Version 0.30; Public Beta Test
 
 ##Licence
 CRWinNetDiag; The Tool collects TCP/IP Information for futher Analysis
@@ -40,24 +40,24 @@ The Programm Reads the network configuration out of the registry.
 Also it executes some cli display commands and collects the output.
 The commnds that executed by the program are the following:
 ``` 
-netstat -e Wird ausgefhrt!
-netstat -ano Wird ausgefhrt!
-netstat -tn Wird ausgefhrt!
-netstat -s Wird ausgefhrt!
-netstat -rn Wird ausgefhrt!
-ipconfig /all Wird ausgefhrt!
-arp  -av Wird ausgefhrt!
-net  stats srv Wird ausgefhrt!
-net  stats work Wird ausgefhrt!
-tasklist  /V Wird ausgefhrt!
-tasklist  /V /FO LIST Wird ausgefhrt!
-tasklist  /SVC Wird ausgefhrt!
-tasklist  /SVC /FO LIST Wird ausgefhrt!
-netsh  int tcp show global Wird ausgefhrt!
-netsh  int tcp show heuristics Wird ausgefhrt!
-netsh  int ip show global Wird ausgefhrt!
-netsh  int ipv4 show global Wird ausgefhrt!
-netsh  int ipv6 show global Wird ausgefhrt!
+netstat -e 
+netstat -ano 
+netstat -tn 
+netstat -s 
+netstat -rn 
+ipconfig /all 
+arp  -av 
+net  stats srv 
+net  stats work 
+tasklist  /V 
+tasklist  /V /FO LIST 
+tasklist  /SVC 
+tasklist  /SVC /FO LIST 
+netsh  int tcp show global 
+netsh  int tcp show heuristics 
+netsh  int ip show global 
+netsh  int ipv4 show global 
+netsh  int ipv6 show global 
 ```
 ##Sample Output provided by the Programm
 ``` 
