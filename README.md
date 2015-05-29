@@ -33,7 +33,8 @@ Siehe die GNU General Public License für weitere Details.
 
 ## Start the programm
 The executable resides here **./bin/Release/CRWinNetDiag.exe** it needs at least .net3.5 to run.
-It is recommended that you use the .bat File, so the output will be Piped into a File and at the end it will be displayed in notepad window..
+
+It is recommended that you use the **CRWinNetDiag.bat** File, so the output will be Piped into a File and at the end it will be displayed in notepad window..
 
 ## Description
 The Programm Reads the network configuration out of the registry.
