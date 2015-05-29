@@ -33,7 +33,32 @@ Siehe die GNU General Public License für weitere Details.
 
 ## Start the programm
 The executable resides here **./bin/Release/CRWinNetDiag.exe** it needs at least .net3.5 to run.
+It is recommended that you use the .bat File, so the output will be Piped into a File and at the end it will be displayed in notepad window..
 
+## Description
+The Programm Reads the network configuration out of the registry.
+Also it executes some cli display commands and collects the output.
+The commnds that executed by the program are the following:
+``` 
+netstat -e Wird ausgefhrt!
+netstat -ano Wird ausgefhrt!
+netstat -tn Wird ausgefhrt!
+netstat -s Wird ausgefhrt!
+netstat -rn Wird ausgefhrt!
+ipconfig /all Wird ausgefhrt!
+arp  -av Wird ausgefhrt!
+net  stats srv Wird ausgefhrt!
+net  stats work Wird ausgefhrt!
+tasklist  /V Wird ausgefhrt!
+tasklist  /V /FO LIST Wird ausgefhrt!
+tasklist  /SVC Wird ausgefhrt!
+tasklist  /SVC /FO LIST Wird ausgefhrt!
+netsh  int tcp show global Wird ausgefhrt!
+netsh  int tcp show heuristics Wird ausgefhrt!
+netsh  int ip show global Wird ausgefhrt!
+netsh  int ipv4 show global Wird ausgefhrt!
+netsh  int ipv6 show global Wird ausgefhrt!
+```
 ##Sample Output provided by the Programm
 ``` 
 Product Name: Windows 8.1 Pro
@@ -1389,6 +1414,152 @@ Schnittstelle: 0.0.0.0 --- 0xffffffff
   224.0.0.22            01-00-5e-00-00-16     statisch  
   224.0.0.252           01-00-5e-00-00-fc     statisch  
   239.255.255.250       01-00-5e-7f-ff-fa     statisch  
+________________________________________________________________________________
+====================================== tasklist  /V ============================
+
+Abbildname                     PID Sitzungsname       Sitz.-Nr. Speichernutzung Status          Benutzername                                           CPU-Zeit Fenstertitel                                                            
+========================= ======== ================ =========== =============== =============== ================================================== ============ ========================================================================
+System Idle Process              0 Services                   0             4 K Unknown         NT-AUTORITÄT\SYSTEM                                   248:06:16 Nicht zutreffend                                                        
+System                           4 Services                   0        19.204 K Unknown         Nicht zutreffend                                        0:14:52 Nicht zutreffend                                                        
+smss.exe                       620 Services                   0           976 K Unknown         Nicht zutreffend                                        0:00:00 Nicht zutreffend                                                        
+csrss.exe                      812 Services                   0         5.232 K Unknown         Nicht zutreffend                                        0:00:18 Nicht zutreffend                                                        
+wininit.exe                    920 Services                   0         4.128 K Unknown         Nicht zutreffend                                        0:00:00 Nicht zutreffend                                                        
+...
+________________________________________________________________________________
+
+
+====================================== tasklist  /V /FO LIST ===================
+
+Abbildname:      System Idle Process
+PID:             0
+Sitzungsname:    Services
+Sitz.-Nr.:       0
+Speichernutzung: 4 K
+Status:          Unknown
+Benutzername:    NT-AUTORITÄT\SYSTEM
+CPU-Zeit:        248:06:33
+Fenstertitel:    Nicht zutreffend
+
+...
+________________________________________________________________________________
+
+
+====================================== tasklist  /SVC ==========================
+
+Abbildname                     PID Dienste                                     
+========================= ======== ============================================
+...
+IPROSetMonitor.exe            2640 Intel(R) PROSet Monitoring Service          
+IntelModemAuthenticator.e     2948 IntelModemAuthenticator                     
+...
+________________________________________________________________________________
+
+
+====================================== tasklist  /SVC /FO LIST =================
+
+...
+
+Abbildname:      svchost.exe
+PID:             628
+Dienste:         RpcEptMapper
+                 RpcSs
+...
+________________________________________________________________________________
+
+
+====================================== netsh  int tcp show global ==============
+Der aktive Status wird abgefragt...
+
+Globale TCP-Parameter
+--------------------------------------------------------------------
+Zustand der empfangsseitigen Skalierung   : enabled
+Chimney-Abladezustand                     : disabled
+NetDMA-Zustand                            : disabled
+Direkter Cachezugriff (DCA)               : disabled
+Autom. Abstimmungsgrad Empfangsfenster    : normal
+Add-On "Überlastungssteuerungsanbieter"   : none
+ECN-Funktion                              : disabled
+RFC 1323-Zeitstempel                      : disabled
+RTO (anfänglich)                          : 3000
+Zustand der Empfangssegmentzusammenfügung : disabled
+Nicht-SACK-RTT-Widerstandsfähigkeit              : disabled 
+Maximale SYN-Neuübertragungen             : 2 
+
+________________________________________________________________________________
+
+
+====================================== netsh  int tcp show heuristics ==========
+TCP-Parameter für die Fensterskalierungsheuristik
+----------------------------------------------
+Fensterskalierungsheuristik         : disabled 
+Qualifizierende Zielschwelle  : 3 
+Profiltyp unknown              : normal 
+Profiltyp public               : normal 
+Profiltyp private              : normal 
+Profiltyp domain               : normal 
+
+________________________________________________________________________________
+
+
+
+====================================== netsh  int ipv4 show global =============
+Der aktive Status wird abgefragt...
+
+Allgemeine globale Parameter
+---------------------------------------------
+Standardabschnittslimit                   : 128 Abschnitte
+Nachbarcachelimit                         : 256 Einträge pro Schnittstelle
+Routecachelimit                           : 128 Einträge pro Depot
+Reassemblierungslimit                     : 66105504 Bytes
+ICMP-Umleitungen                          : enabled
+Quellroutingverhalten                     : dontforward
+Aufgabenabladung                          : disabled
+DHCP-Medienerkennung                      : enabled
+Medienerkennungsprotokollierung           : disabled
+MLD-Ebene                                 : all
+MLD-Version                               : version3
+Multicastweiterleitung                    : disabled
+Gruppenweiterleitungsfragmente            : disabled
+IDs zufällig anordnen                     : enabled
+Adressmaskenantwort                       : disabled
+Mindest-MTU                               : 576
+
+Aktuelle globale Statistiken
+---------------------------------------------
+Anzahl von Depots              : 1
+Anzahl von NL-Clients                : 5
+Anzahl von FL-Provider              : 5
+
+________________________________________________________________________________
+
+
+====================================== netsh  int ipv6 show global =============
+Der aktive Status wird abgefragt...
+
+Allgemeine globale Parameter
+---------------------------------------------
+Standardabschnittslimit                   : 128 Abschnitte
+Nachbarcachelimit                         : 256 Einträge pro Schnittstelle
+Routecachelimit                           : 128 Einträge pro Depot
+Reassemblierungslimit                     : 66105504 Bytes
+ICMP-Umleitungen                          : enabled
+Quellroutingverhalten                     : dontforward
+Aufgabenabladung                          : enabled
+DHCP-Medienerkennung                      : enabled
+Medienerkennungsprotokollierung           : disabled
+MLD-Ebene                                 : all
+MLD-Version                               : version3
+Multicastweiterleitung                    : disabled
+Gruppenweiterleitungsfragmente            : disabled
+IDs zufällig anordnen                     : enabled
+Adressmaskenantwort                       : disabled
+Mindest-MTU                               : 1280
+
+Aktuelle globale Statistiken
+---------------------------------------------
+Anzahl von Depots              : 1
+Anzahl von NL-Clients                : 5
+Anzahl von FL-Provider              : 5
 ________________________________________________________________________________
 ```
 

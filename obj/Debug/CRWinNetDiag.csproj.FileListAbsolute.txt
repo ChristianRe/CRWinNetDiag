@@ -1,0 +1,14 @@
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Debug\CRWinNetDiag.exe.config
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Debug\CRWinNetDiag.exe.manifest
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Debug\CRWinNetDiag.application
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Debug\CRWinNetDiag.exe
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Debug\CRWinNetDiag.pdb
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Debug\CRWinNetDiag.exe.CodeAnalysisLog.xml
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Debug\CRWinNetDiag.exe.lastcodeanalysissucceeded
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Debug\CRWinNetDiag.TrustInfo.xml
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Debug\CRWinNetDiag.exe.manifest
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Debug\CRWinNetDiag.application
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Debug\CRWinNetDiag.exe
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Debug\CRWinNetDiag.pdb
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Debug\CRWinNetDiag.XML
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Debug\CRWinNetDiag.csprojResolveAssemblyReference.cache

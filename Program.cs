@@ -44,7 +44,7 @@ namespace WinNetDiag
     {
         static void Main(string[] args)
         {
-
+            const String VER = "0.30";
 
             if (System.Environment.OSVersion.Version.Major >= 2)
             {
@@ -65,6 +65,15 @@ namespace WinNetDiag
 
                 if (myOsKey != null)
                 {
+                    Console.WriteLine("===============================================================");
+                    Console.WriteLine("");
+                    Console.WriteLine("CRWinNetDiag             Version: " + VER + "");
+                    Console.WriteLine("DownloadLocation:        https://github.com/ChristianRe/CRWinNetDiag");
+                    Console.WriteLine("");
+                    Console.WriteLine("Date of Execution: " + System.DateTime.Now.ToLocalTime());
+                    Console.WriteLine("===============================================================");
+
+
                     Console.WriteLine("Product Name: " + myOsKey.GetValue("ProductName"));
                     Console.WriteLine("Current Version: " + myOsKey.GetValue("CurrentVersion"));
                     Console.WriteLine("Build Lab: " + myOsKey.GetValue("BuildLab"));

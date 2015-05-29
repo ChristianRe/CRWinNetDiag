@@ -58,7 +58,7 @@ namespace WinNetDiag
 
         public string getInfo()
         {
-          myNetworkInfo = "";
+            myNetworkInfo = "";
 
             myNetworkInfo = myNetworkInfo + fillStringwWithChars("=", 38, "=") + fillStringwWithChars(" TCPIP Konfig ", 42, "=") + "\r\n";
             RegParser myParser1 = new RegParser(LocalSystemKey1, "Parameters");
@@ -70,7 +70,7 @@ namespace WinNetDiag
             RegParser myParser2 = new RegParser(LocalSystemKey2, "Parameters");
             myNetworkInfo = myNetworkInfo + myParser2.WriteAllParms();
             myNetworkInfo = myNetworkInfo + "      " + "\r\n";
-  
+
 
             foreach (NetworkInterface myNic in nics)
             {
@@ -91,29 +91,42 @@ namespace WinNetDiag
 
             Encoding myENC = Encoding.GetEncoding(850);
 
-           Console.OutputEncoding = myENC;
+            Console.OutputEncoding = myENC;
 
             // ParameterizedThreadStart pts1 = new ParameterizedThreadStart(this.consoleCommandReadOutput);
             Thread t1 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-e", ref myNetworkInfo); });
             //myNetworkInfo = myNetworkInfo + fillStringwWithChars("_", 33, "_") + fillStringwWithChars("_", 38, "_") + "\r\n\r\n\r\n";
             Thread t2 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-ano", ref myNetworkInfo); });
-       //     Thread t3 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-x", ref myNetworkInfo); });
+            //     Thread t3 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-x", ref myNetworkInfo); });
 
-          //  Thread t4 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-yn", ref myNetworkInfo); });
+            //  Thread t4 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-yn", ref myNetworkInfo); });
             Thread t5 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-tn", ref myNetworkInfo); });
             Thread t6 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-s", ref myNetworkInfo); });
             Thread t7 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-rn", ref myNetworkInfo); });
             Thread t8 = new Thread(delegate() { this.consoleCommandReadOutput("ipconfig", "/all", ref myNetworkInfo); });
             Thread t9 = new Thread(delegate() { this.consoleCommandReadOutput("arp ", "-av", ref myNetworkInfo); });
+            Thread t10 = new Thread(delegate() { this.consoleCommandReadOutput("net ", "stats srv", ref myNetworkInfo); });
+            Thread t11 = new Thread(delegate() { this.consoleCommandReadOutput("net ", "stats work", ref myNetworkInfo); });
+            Thread t12 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/V", ref myNetworkInfo); });
+            Thread t13 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/V /FO LIST", ref myNetworkInfo); });
+            Thread t14 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/SVC", ref myNetworkInfo); });
+            Thread t15 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/SVC /FO LIST", ref myNetworkInfo); });
+            Thread t16 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int tcp show global", ref myNetworkInfo); });
+            Thread t17 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int tcp show heuristics", ref myNetworkInfo); });
+            Thread t18 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int ip show global", ref myNetworkInfo); });
+            Thread t19 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int ipv4 show global", ref myNetworkInfo); });
+            Thread t20 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int ipv6 show global", ref myNetworkInfo); });
             //Thread t9 = new Thread(delegate() { this.consoleCommandReadOutput("ipconfig", "/allcompartments /all", ref myNetworkInfo); });
+            int myOSVersion = System.Environment.OSVersion.Version.Major;
+
             t1.Start();
             t1.Join();
 
             t2.Start();
             t2.Join();
 
-         //   t3.Start();
-         //   t3.Join();
+            //   t3.Start();
+            //   t3.Join();
 
 
             //t4.Start();
@@ -133,6 +146,47 @@ namespace WinNetDiag
 
             t9.Start();
             t9.Join();
+            if (myOSVersion >= 5)
+            {
+                t10.Start();
+                t10.Join();
+
+                t11.Start();
+                t11.Join();
+
+
+
+                t12.Start();
+                t12.Join();
+
+                t13.Start();
+                t13.Join();
+
+                t14.Start();
+                t14.Join();
+
+                t15.Start();
+                t15.Join();
+
+
+                if (myOSVersion >= 6)
+                {
+                    t16.Start();
+                    t16.Join();
+                    t17.Start();
+                    t17.Join();
+
+                    t18.Start();
+                    t18.Join();
+                    t19.Start();
+                    t19.Join();
+
+                    t20.Start();
+                    t20.Join();
+                }// endif
+            }// endif
+            //t16.Start();
+            //t16.Join();
 
 
 
@@ -143,10 +197,10 @@ namespace WinNetDiag
 
             myENC = Encoding.GetEncoding(1252);
 
-      
+
             Console.OutputEncoding = myENC;
 
-    
+
 
             return myNetworkInfo;
         }
@@ -155,14 +209,14 @@ namespace WinNetDiag
         //private Task <string> consoleCommandReadOutput(string myCommand, string myCommandParameter)
         private void consoleCommandReadOutput(string myCommand, string myCommandParameter, ref string myString)
         {
-          
+
             Process p = new Process();
             ProcessStartInfo pStartInfo = new ProcessStartInfo(myCommand, myCommandParameter);
 
 
 
             Console.Error.WriteLine("Bitte Warten! " + myCommand + " " + myCommandParameter + " Wird ausgeführt!");
-          
+
             string myConsoleOutput;
             pStartInfo.RedirectStandardOutput = true;
             pStartInfo.UseShellExecute = false;
@@ -171,7 +225,7 @@ namespace WinNetDiag
             p.Start();
             System.Object lockThis = new System.Object();
 
-      
+
             // Erzwingt einheitlichen Programmoutput
             lock (lockThis)
             {
