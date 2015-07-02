@@ -143,7 +143,7 @@ namespace WinNetDiag
             RegistryKey mySpecificParam = null;
             RegistryKey myEnum;
 
-            Console.Error.WriteLine("Bitte Warten! Netzwerkkonfiguration wird gelesen!");
+            Console.Error.WriteLine("Please Wait! \tNetworkconfiguration \t will be parsed!");
 
             if (membRegSubKeyByNetCfgID != null)
             {
@@ -199,7 +199,7 @@ namespace WinNetDiag
                             myEnum = mySpecificParam.OpenSubKey("Enum");
                             if (myEnum != null)
                             {
-                                myString = myString + fillStringwWithChars("-----Enum (Werte die der Parameter - " + myValueNames[i] + " -annehmen kann!)", 80, "-") + "\r\n";
+                                myString = myString + fillStringwWithChars("-------Enum (Values that could be assigned to the parameter -- " + myValueNames[i] + ")", 80, "-") + "\r\n";
                                 myEnumValueNames = myEnum.GetValueNames();
                                 myEnumValues = new string[myEnum.ValueCount, 2];
 
@@ -240,7 +240,7 @@ namespace WinNetDiag
 
             string[] myValueNames;
 
-            Console.Error.WriteLine("Bitte Warten! Konfiguration wird gelesen!");
+            Console.Error.WriteLine("Please Wait! \tConfiguration \t\t will be parsed!");
 
 
             myValueNames = membRegKey.GetValueNames();

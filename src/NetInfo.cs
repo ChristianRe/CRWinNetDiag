@@ -45,6 +45,7 @@ namespace WinNetDiag
         const string LocalSystemKey = "SYSTEM\\CurrentControlSet\\Control\\Class";
         const string LocalSystemKey1 = "SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters";
         const string LocalSystemKey2 = "SYSTEM\\CurrentControlSet\\Services\\Tcpip6\\Parameters";
+        const string LocalSystemKey3 = "SYSTEM\\CurrentControlSet\\Services\\AFD\\Parameters";
 
         //private RegistryKey myRegKey;
         private string mySearchKey;
@@ -71,6 +72,11 @@ namespace WinNetDiag
             myNetworkInfo = myNetworkInfo + myParser2.WriteAllParms();
             myNetworkInfo = myNetworkInfo + "      " + "\r\n";
 
+            myNetworkInfo = myNetworkInfo + fillStringwWithChars("=", 38, "=") + fillStringwWithChars(" AFD Params ", 42, "=") + "\r\n";
+            RegParser myParser3 = new RegParser(LocalSystemKey3, "Parameters");
+            myNetworkInfo = myNetworkInfo + myParser2.WriteAllParms();
+            myNetworkInfo = myNetworkInfo + "      " + "\r\n";
+
 
             foreach (NetworkInterface myNic in nics)
             {
@@ -94,29 +100,29 @@ namespace WinNetDiag
             Console.OutputEncoding = myENC;
 
             // ParameterizedThreadStart pts1 = new ParameterizedThreadStart(this.consoleCommandReadOutput);
-            Thread t1 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-e", ref myNetworkInfo); });
+            Thread t1 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-e \t", ref myNetworkInfo); });
             //myNetworkInfo = myNetworkInfo + fillStringwWithChars("_", 33, "_") + fillStringwWithChars("_", 38, "_") + "\r\n\r\n\r\n";
-            Thread t2 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-ano", ref myNetworkInfo); });
+            Thread t2 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-ano \t", ref myNetworkInfo); });
             //     Thread t3 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-x", ref myNetworkInfo); });
 
             //  Thread t4 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-yn", ref myNetworkInfo); });
-            Thread t5 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-tn", ref myNetworkInfo); });
-            Thread t6 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-s", ref myNetworkInfo); });
-            Thread t7 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-rn", ref myNetworkInfo); });
-            Thread t8 = new Thread(delegate() { this.consoleCommandReadOutput("ipconfig", "/all", ref myNetworkInfo); });
-            Thread t9 = new Thread(delegate() { this.consoleCommandReadOutput("arp ", "-av", ref myNetworkInfo); });
-            Thread t10 = new Thread(delegate() { this.consoleCommandReadOutput("net ", "stats srv", ref myNetworkInfo); });
-            Thread t11 = new Thread(delegate() { this.consoleCommandReadOutput("net ", "stats work", ref myNetworkInfo); });
-            Thread t12 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/V", ref myNetworkInfo); });
+            Thread t5 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-tn \t", ref myNetworkInfo); });
+            Thread t6 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-s \t", ref myNetworkInfo); });
+            Thread t7 = new Thread(delegate() { this.consoleCommandReadOutput("netstat", "-rn \t", ref myNetworkInfo); });
+            Thread t8 = new Thread(delegate() { this.consoleCommandReadOutput("ipconfig", "/all \t", ref myNetworkInfo); });
+            Thread t9 = new Thread(delegate() { this.consoleCommandReadOutput("arp ", "-av \t", ref myNetworkInfo); });
+            Thread t10 = new Thread(delegate() { this.consoleCommandReadOutput("net ", "stats srv \t", ref myNetworkInfo); });
+            Thread t11 = new Thread(delegate() { this.consoleCommandReadOutput("net ", "stats work ", ref myNetworkInfo); });
+            Thread t12 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/V \t", ref myNetworkInfo); });
             Thread t13 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/V /FO LIST", ref myNetworkInfo); });
-            Thread t14 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/SVC", ref myNetworkInfo); });
-            Thread t15 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/SVC /FO LIST", ref myNetworkInfo); });
+            Thread t14 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/SVC \t", ref myNetworkInfo); });
+            Thread t15 = new Thread(delegate() { this.consoleCommandReadOutput("tasklist ", "/SVC /FO LIST ", ref myNetworkInfo); });
             Thread t16 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int tcp show global", ref myNetworkInfo); });
             Thread t17 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int tcp show heuristics", ref myNetworkInfo); });
             Thread t18 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int ip show global", ref myNetworkInfo); });
             Thread t19 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int ipv4 show global", ref myNetworkInfo); });
             Thread t20 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int ipv6 show global", ref myNetworkInfo); });
-            //Thread t9 = new Thread(delegate() { this.consoleCommandReadOutput("ipconfig", "/allcompartments /all", ref myNetworkInfo); });
+            Thread t21 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "dump", ref myNetworkInfo); });
             int myOSVersion = System.Environment.OSVersion.Version.Major;
 
             t1.Start();
@@ -169,7 +175,7 @@ namespace WinNetDiag
                 t15.Join();
 
 
-                if (myOSVersion >= 6)
+                if (myOSVersion > 5)
                 {
                     t16.Start();
                     t16.Join();
@@ -183,6 +189,8 @@ namespace WinNetDiag
 
                     t20.Start();
                     t20.Join();
+                    t21.Start();
+                    t21.Join();
                 }// endif
             }// endif
             //t16.Start();
@@ -215,7 +223,7 @@ namespace WinNetDiag
 
 
 
-            Console.Error.WriteLine("Bitte Warten! " + myCommand + " " + myCommandParameter + " Wird ausgeführt!");
+            Console.Error.WriteLine("Please Wait!\t" + myCommand + " " + myCommandParameter + "\t will be executed!");
 
             string myConsoleOutput;
             pStartInfo.RedirectStandardOutput = true;

@@ -1,5 +1,5 @@
 ## CRWinNetDiag
-Version 0.30; Public Beta Test
+Version 0.31; Public Beta Test
 
 ##Licence
 CRWinNetDiag; The Tool collects TCP/IP Information for futher Analysis
@@ -34,11 +34,12 @@ Siehe die GNU General Public License für weitere Details.
 ## Start the programm
 The executable resides here **./bin/Release/CRWinNetDiag.exe** it needs at least .net3.5 to run.
 
-It is recommended that you use the **CRWinNetDiag.bat** File, so the output will be Piped into a File and at the end it will be displayed in notepad window..
+It is recommended that you use the **CRWinNetDiag.bat** File, so the output will be piped into a file and at the end it will be displayed in notepad window..
 
 ## Description
-The Programm Reads the network configuration out of the registry.
+The programm reads the network configuration from the registry.
 Also it executes some cli display commands and collects the output.
+The Description language  and some outputs could vary depending on the OS and driver language.
 The commnds that executed by the program are the following:
 ``` 
 netstat -e 
@@ -59,9 +60,17 @@ netsh  int tcp show heuristics
 netsh  int ip show global 
 netsh  int ipv4 show global 
 netsh  int ipv6 show global 
+netsh dump
 ```
-##Sample Output provided by the Programm
+##Sample Output provided by the Programm (at Windows 8.1 Pro German Version)
 ``` 
+===============================================================
+
+CRWinNetDiag             Version: 0.31
+DownloadLocation:        https://github.com/ChristianRe/CRWinNetDiag
+
+Date of Execution: 02.07.2015 21:51:27
+===============================================================
 Product Name: Windows 8.1 Pro
 Current Version: 6.3
 Build Lab: 9600.winblue_r9.150322-1500
@@ -139,7 +148,7 @@ IfTypePreStart                          243
       ParamDesc                         Selektives Energiesparen
       default                           1
       type                              enum
------Enum (Werte die der Parameter - *SelectiveSuspend -annehmen kann!)---------
+-----Enum (Values that could be assigned to the parameter -- *SelectiveSuspend)---------
             0                           Deaktivieren
             1                           Aktivieren
 --------------------------------------------------------------------------------
@@ -272,7 +281,7 @@ IfTypePreStart                          71
       ParamDesc                         Medientrennung beim Aufrechterhalten des Energiesparmodus von WoWLAN
       type                              enum
       default                           0
------Enum (Werte die der Parameter - *DeviceSleepOnDisconnect -annehmen kann!)--
+-----Enum (Values that could be assigned to the parameter -- *DeviceSleepOnDisconnect)--
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -281,7 +290,7 @@ IfTypePreStart                          71
       ParamDesc                         ARP-Offload für WoWLAN
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *PMARPOffload -annehmen kann!)-------------
+-----Enum (Values that could be assigned to the parameter -- *PMARPOffload)-------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -290,7 +299,7 @@ IfTypePreStart                          71
       ParamDesc                         NS-Offload für WoWLAN
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *PMNSOffload -annehmen kann!)--------------
+-----Enum (Values that could be assigned to the parameter -- *PMNSOffload)--------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -299,7 +308,7 @@ IfTypePreStart                          71
       ParamDesc                         GTK führt Neuverschlüsselung für WoWLAN durch
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *PMWiFiRekeyOffload -annehmen kann!)-------
+-----Enum (Values that could be assigned to the parameter -- *PMWiFiRekeyOffload)-------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -308,7 +317,7 @@ IfTypePreStart                          71
       ParamDesc                         Aktivierung durch Magic Packet
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *WakeOnMagicPacket -annehmen kann!)--------
+-----Enum (Values that could be assigned to the parameter -- *WakeOnMagicPacket)--------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -317,7 +326,7 @@ IfTypePreStart                          71
       ParamDesc                         Aktivierung durch Musterübereinstimmung
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *WakeOnPattern -annehmen kann!)------------
+-----Enum (Values that could be assigned to the parameter -- *WakeOnPattern)------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -327,7 +336,7 @@ BT3HSMode                               1
       Type                              enum
       Default                           1
       Optional                          0
------Enum (Werte die der Parameter - BT3HSMode -annehmen kann!)-----------------
+-----Enum (Values that could be assigned to the parameter -- BT3HSMode)-----------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -337,7 +346,7 @@ CtsToItself                             1
       Type                              enum
       Default                           1
       Optional                          0
------Enum (Werte die der Parameter - CtsToItself -annehmen kann!)---------------
+-----Enum (Values that could be assigned to the parameter -- CtsToItself)---------------
             0                           RTS/CTS aktiviert
             1                           'CTS-to-self' aktiviert
 --------------------------------------------------------------------------------
@@ -347,7 +356,7 @@ IbssQosEnabled                          0
       Type                              enum
       Default                           0
       Optional                          0
------Enum (Werte die der Parameter - IbssQosEnabled -annehmen kann!)------------
+-----Enum (Values that could be assigned to the parameter -- IbssQosEnabled)------------
             0                           WMM deaktiviert
             1                           WMM aktiviert
 --------------------------------------------------------------------------------
@@ -357,7 +366,7 @@ IbssTxPower                             100
       Type                              enum
       Default                           100
       Optional                          0
------Enum (Werte die der Parameter - IbssTxPower -annehmen kann!)---------------
+-----Enum (Values that could be assigned to the parameter -- IbssTxPower)---------------
             0                           1. Am niedrigsten
             25                          2. Mittel-niedrig
             50                          3. Mittel
@@ -370,7 +379,7 @@ IEEE11nMode                             2
       Type                              enum
       Default                           2
       Optional                          0
------Enum (Werte die der Parameter - IEEE11nMode -annehmen kann!)---------------
+-----Enum (Values that could be assigned to the parameter -- IEEE11nMode)---------------
             0                           Deaktiviert
             1                           HT Modus
             2                           VHT Modus
@@ -390,7 +399,7 @@ RoamAggressiveness                      2
       Type                              enum
       Default                           2
       Optional                          0
------Enum (Werte die der Parameter - RoamAggressiveness -annehmen kann!)--------
+-----Enum (Values that could be assigned to the parameter -- RoamAggressiveness)--------
             0                           1. Am niedrigsten
             1                           2. Mittel-niedrig
             2                           3. Mittel
@@ -403,7 +412,7 @@ RoamingPreferredBandType                2
       Type                              enum
       Default                           0
       Optional                          0
------Enum (Werte die der Parameter - RoamingPreferredBandType -annehmen kann!)--
+-----Enum (Values that could be assigned to the parameter -- RoamingPreferredBandType)--
             0                           1. Keine Einstellung
             1                           2. 2,4-GHz-Band bevorzugen
             2                           3. 5,2-GHz-Band bevorzugen
@@ -439,7 +448,7 @@ vhtCapabilities                         58749218
       ParamDesc                         Paketzusammenfügung
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *PacketCoalescing -annehmen kann!)---------
+-----Enum (Values that could be assigned to the parameter -- *PacketCoalescing)---------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -449,7 +458,7 @@ FatChannelIntolerant                    0
       Type                              enum
       Default                           0
       Optional                          0
------Enum (Werte die der Parameter - FatChannelIntolerant -annehmen kann!)------
+-----Enum (Values that could be assigned to the parameter -- FatChannelIntolerant)------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -473,7 +482,7 @@ ThroughputBoosterEnabled                1
       Type                              enum
       Default                           0
       Optional                          0
------Enum (Werte die der Parameter - ThroughputBoosterEnabled -annehmen kann!)--
+-----Enum (Values that could be assigned to the parameter -- ThroughputBoosterEnabled)--
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -488,7 +497,7 @@ ChannelWidth24                          1
       Type                              enum
       Default                           1
       Optional                          0
------Enum (Werte die der Parameter - ChannelWidth24 -annehmen kann!)------------
+-----Enum (Values that could be assigned to the parameter -- ChannelWidth24)------------
             0                           20 MHz
             1                           Auto
 --------------------------------------------------------------------------------
@@ -498,7 +507,7 @@ ChannelWidth52                          1
       Type                              enum
       Default                           1
       Optional                          0
------Enum (Werte die der Parameter - ChannelWidth52 -annehmen kann!)------------
+-----Enum (Values that could be assigned to the parameter -- ChannelWidth52)------------
             0                           20 MHz
             1                           Auto
 --------------------------------------------------------------------------------
@@ -508,7 +517,7 @@ uAPSDSupport                            0
       Type                              enum
       Optional                          0
       Default                           0
------Enum (Werte die der Parameter - uAPSDSupport -annehmen kann!)--------------
+-----Enum (Values that could be assigned to the parameter -- uAPSDSupport)--------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -528,7 +537,7 @@ LinkNegotiationProcess                  1
       ParamDesc                         Kompatibilitätsmodus für ältere Switches
       default                           1
       type                              enum
------Enum (Werte die der Parameter - LinkNegotiationProcess -annehmen kann!)----
+-----Enum (Values that could be assigned to the parameter -- LinkNegotiationProcess)----
             2                           Aktiviert
             1                           Deaktiviert
 --------------------------------------------------------------------------------
@@ -545,7 +554,7 @@ IfTypePreStart                          6
       ParamDesc                         Flusssteuerung
       default                           3
       type                              enum
------Enum (Werte die der Parameter - *FlowControl -annehmen kann!)--------------
+-----Enum (Values that could be assigned to the parameter -- *FlowControl)--------------
             0                           Deaktiviert
             1                           Tx aktiviert
             2                           Rx aktiviert
@@ -556,7 +565,7 @@ IfTypePreStart                          6
       ParamDesc                         Interrupt-Drosselung
       default                           1
       type                              enum
------Enum (Werte die der Parameter - *InterruptModeration -annehmen kann!)------
+-----Enum (Values that could be assigned to the parameter -- *InterruptModeration)------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -565,7 +574,7 @@ IfTypePreStart                          6
       ParamDesc                         IPv4-Prüfsummen abladen
       default                           3
       type                              enum
------Enum (Werte die der Parameter - *IPChecksumOffloadIPv4 -annehmen kann!)----
+-----Enum (Values that could be assigned to the parameter -- *IPChecksumOffloadIPv4)----
             0                           Deaktiviert
             1                           Tx aktiviert
             2                           Rx aktiviert
@@ -576,7 +585,7 @@ IfTypePreStart                          6
       ParamDesc                         Jumbo Packet
       default                           1514
       type                              enum
------Enum (Werte die der Parameter - *JumboPacket -annehmen kann!)--------------
+-----Enum (Values that could be assigned to the parameter -- *JumboPacket)--------------
             1514                        Deaktiviert
             4088                        4088 Byte
             9014                        9014 Byte
@@ -586,7 +595,7 @@ IfTypePreStart                          6
       ParamDesc                         Large-Send-Offload V2 (IPv4)
       default                           1
       type                              enum
------Enum (Werte die der Parameter - *LsoV2IPv4 -annehmen kann!)----------------
+-----Enum (Values that could be assigned to the parameter -- *LsoV2IPv4)----------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -595,7 +604,7 @@ IfTypePreStart                          6
       ParamDesc                         Large-Send-Offload V2 (IPv6)
       default                           1
       type                              enum
------Enum (Werte die der Parameter - *LsoV2IPv6 -annehmen kann!)----------------
+-----Enum (Values that could be assigned to the parameter -- *LsoV2IPv6)----------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -604,7 +613,7 @@ IfTypePreStart                          6
       ParamDesc                         Protokoll-ARP-Abladung
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *PMARPOffload -annehmen kann!)-------------
+-----Enum (Values that could be assigned to the parameter -- *PMARPOffload)-------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -613,7 +622,7 @@ IfTypePreStart                          6
       ParamDesc                         Protokoll-NS-Abladung
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *PMNSOffload -annehmen kann!)--------------
+-----Enum (Values that could be assigned to the parameter -- *PMNSOffload)--------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -622,7 +631,7 @@ IfTypePreStart                          6
       ParamDesc                         Paketpriorität und VLAN
       default                           3
       type                              enum
------Enum (Werte die der Parameter - *PriorityVLANTag -annehmen kann!)----------
+-----Enum (Values that could be assigned to the parameter -- *PriorityVLANTag)----------
             0                           Paketpriorität und VLAN deaktiviert
             1                           Paketpriorität aktiviert
             2                           VLAN aktiviert
@@ -643,7 +652,7 @@ IfTypePreStart                          6
       ParamDesc                         RSS (Empfangsseitige Skalierung)
       default                           1
       type                              enum
------Enum (Werte die der Parameter - *RSS -annehmen kann!)----------------------
+-----Enum (Values that could be assigned to the parameter -- *RSS)----------------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -652,7 +661,7 @@ IfTypePreStart                          6
       ParamDesc                         Geschwindigkeit & Duplex
       default                           0
       type                              enum
------Enum (Werte die der Parameter - *SpeedDuplex -annehmen kann!)--------------
+-----Enum (Values that could be assigned to the parameter -- *SpeedDuplex)--------------
             0                           Automatische Aushandlung
             1                           10 Mbit/s Halbduplex
             2                           10 Mbit/s Vollduplex
@@ -665,7 +674,7 @@ IfTypePreStart                          6
       ParamDesc                         TCP-Prüfsummen abladen (IPv4)
       default                           3
       type                              enum
------Enum (Werte die der Parameter - *TCPChecksumOffloadIPv4 -annehmen kann!)---
+-----Enum (Values that could be assigned to the parameter -- *TCPChecksumOffloadIPv4)---
             0                           Deaktiviert
             1                           Tx aktiviert
             2                           Rx aktiviert
@@ -676,7 +685,7 @@ IfTypePreStart                          6
       ParamDesc                         TCP-Prüfsummen abladen (IPv6)
       default                           3
       type                              enum
------Enum (Werte die der Parameter - *TCPChecksumOffloadIPv6 -annehmen kann!)---
+-----Enum (Values that could be assigned to the parameter -- *TCPChecksumOffloadIPv6)---
             0                           Deaktiviert
             1                           Tx aktiviert
             2                           Rx aktiviert
@@ -697,7 +706,7 @@ IfTypePreStart                          6
       ParamDesc                         UDP-Prüfsummen abladen (IPv4)
       default                           3
       type                              enum
------Enum (Werte die der Parameter - *UDPChecksumOffloadIPv4 -annehmen kann!)---
+-----Enum (Values that could be assigned to the parameter -- *UDPChecksumOffloadIPv4)---
             0                           Deaktiviert
             1                           Tx aktiviert
             2                           Rx aktiviert
@@ -708,7 +717,7 @@ IfTypePreStart                          6
       ParamDesc                         UDP-Prüfsummen abladen (IPv6)
       default                           3
       type                              enum
------Enum (Werte die der Parameter - *UDPChecksumOffloadIPv6 -annehmen kann!)---
+-----Enum (Values that could be assigned to the parameter -- *UDPChecksumOffloadIPv6)---
             0                           Deaktiviert
             1                           Tx aktiviert
             2                           Rx aktiviert
@@ -719,7 +728,7 @@ AdaptiveIFS                             0
       ParamDesc                         Adaptives Interframe-Spacing 
       default                           0
       type                              enum
------Enum (Werte die der Parameter - AdaptiveIFS -annehmen kann!)---------------
+-----Enum (Values that could be assigned to the parameter -- AdaptiveIFS)---------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -728,7 +737,7 @@ ITR                                     65535
       ParamDesc                         Interrupt-Drosselungsrate
       default                           65535
       type                              enum
------Enum (Werte die der Parameter - ITR -annehmen kann!)-----------------------
+-----Enum (Values that could be assigned to the parameter -- ITR)-----------------------
             65535                       Adaptiv
             3600                        Extrem
             2000                        Hoch
@@ -742,7 +751,7 @@ LogLinkStateEvent                       51
       ParamDesc                         Verbindungsereignis protokollieren
       Type                              enum
       Default                           51
------Enum (Werte die der Parameter - LogLinkStateEvent -annehmen kann!)---------
+-----Enum (Values that could be assigned to the parameter -- LogLinkStateEvent)---------
             51                          Aktiviert
             16                          Deaktiviert
 --------------------------------------------------------------------------------
@@ -751,7 +760,7 @@ MasterSlave                             0
       ParamDesc                         Gigabit Master/Slave-Modus
       Type                              enum
       Default                           0
------Enum (Werte die der Parameter - MasterSlave -annehmen kann!)---------------
+-----Enum (Values that could be assigned to the parameter -- MasterSlave)---------------
             0                           Automatische Erkennung
             1                           Mastermodus erzwingen
             2                           Slavemodus erzwingen
@@ -761,7 +770,7 @@ WaitAutoNegComplete                     2
       ParamDesc                         Auf Verbindung warten
       default                           2
       type                              enum
------Enum (Werte die der Parameter - WaitAutoNegComplete -annehmen kann!)-------
+-----Enum (Values that could be assigned to the parameter -- WaitAutoNegComplete)-------
             0                           Aus
             1                           Ein
             2                           Automatische Erkennung
@@ -787,7 +796,7 @@ EnablePME                               1
       ParamDesc                         PME aktivieren
       Type                              enum
       Default                           1
------Enum (Werte die der Parameter - EnablePME -annehmen kann!)-----------------
+-----Enum (Values that could be assigned to the parameter -- EnablePME)-----------------
             1                           Aktiviert
             0                           Deaktiviert
 --------------------------------------------------------------------------------
@@ -801,7 +810,7 @@ AutoPowerSaveModeEnabled                0
       ParamDesc                         Geschwindigkeits-Akkusparoption
       type                              enum
       default                           1
------Enum (Werte die der Parameter - AutoPowerSaveModeEnabled -annehmen kann!)--
+-----Enum (Values that could be assigned to the parameter -- AutoPowerSaveModeEnabled)--
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -813,7 +822,7 @@ WakeOnSlot                              0
       ParamDesc                         Max. Anzahl RSS-Warteschlangen
       default                           2
       type                              enum
------Enum (Werte die der Parameter - *NumRssQueues -annehmen kann!)-------------
+-----Enum (Values that could be assigned to the parameter -- *NumRssQueues)-------------
             1                           1 Warteschlange
             2                           2 Warteschlangen
 --------------------------------------------------------------------------------
@@ -822,7 +831,7 @@ WakeOnSlot                              0
       ParamDesc                         Akt. über Magic Packet
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *WakeOnMagicPacket -annehmen kann!)--------
+-----Enum (Values that could be assigned to the parameter -- *WakeOnMagicPacket)--------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -831,7 +840,7 @@ WakeOnSlot                              0
       ParamDesc                         Akt. bei Musterübereinstimmung
       type                              enum
       default                           1
------Enum (Werte die der Parameter - *WakeOnPattern -annehmen kann!)------------
+-----Enum (Values that could be assigned to the parameter -- *WakeOnPattern)------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -840,7 +849,7 @@ EEELinkAdvertisement                    1
       ParamDesc                         Energieeffizientes Ethernet
       type                              enum
       default                           1
------Enum (Werte die der Parameter - EEELinkAdvertisement -annehmen kann!)------
+-----Enum (Values that could be assigned to the parameter -- EEELinkAdvertisement)------
             0                           Aus
             1                           Ein
 --------------------------------------------------------------------------------
@@ -849,7 +858,7 @@ ReduceSpeedOnPowerDown                  1
       ParamDesc                         Geschw. beim Abschalten reduzieren
       Type                              enum
       Default                           1
------Enum (Werte die der Parameter - ReduceSpeedOnPowerDown -annehmen kann!)----
+-----Enum (Values that could be assigned to the parameter -- ReduceSpeedOnPowerDown)----
             1                           Aktiviert
             0                           Deaktiviert
 --------------------------------------------------------------------------------
@@ -858,7 +867,7 @@ SipsEnabled                             0
       ParamDesc                         Systemleerlauf-Energiesparoption
       type                              enum
       default                           0
------Enum (Werte die der Parameter - SipsEnabled -annehmen kann!)---------------
+-----Enum (Values that could be assigned to the parameter -- SipsEnabled)---------------
             0                           Deaktiviert
             1                           Aktiviert
 --------------------------------------------------------------------------------
@@ -1563,6 +1572,47 @@ Anzahl von NL-Clients                : 5
 Anzahl von FL-Provider              : 5
 ________________________________________________________________________________
 ```
+
+====================================== netsh  dump =============================
+#============================
+# Schnittstellenkonfiguration
+#============================
+pushd interface 
+
+
+popd
+# Ende der Schnittstellenkonfiguration
+
+
+
+# ----------------------------------
+# IP-HTTPS-Konfiguration
+# ----------------------------------
+pushd interface httpstunnel
+
+reset
+
+
+popd
+# Ende der IP-HTTPS-Konfiguration
+
+
+
+# ----------------------------------
+# IPv4-Konfiguration
+# ----------------------------------
+pushd interface ipv4
+
+reset
+set global icmpredirects=enabled taskoffload=disabled
+set interface interface="WiFi 6" forwarding=enabled advertise=enabled nud=enabled ignoredefaultroutes=disabled
+set interface interface="wireless_41" forwarding=enabled advertise=enabled nud=enabled ignoredefaultroutes=disabled
+
+
+popd
+# Ende der IPv4-Konfiguration
+
+
 
 
 

@@ -44,7 +44,7 @@ namespace WinNetDiag
     {
         static void Main(string[] args)
         {
-            const String VER = "0.30";
+            const String VER = "0.31";
 
             if (System.Environment.OSVersion.Version.Major >= 2)
             {
