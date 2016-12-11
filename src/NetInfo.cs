@@ -33,6 +33,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using System.Threading;
+//
 
 
 using System.Net.NetworkInformation;
@@ -123,6 +124,8 @@ namespace WinNetDiag
             Thread t19 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int ipv4 show global", ref myNetworkInfo); });
             Thread t20 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "int ipv6 show global", ref myNetworkInfo); });
             Thread t21 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "dump", ref myNetworkInfo); });
+            Thread t22 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "advfirewall show allprofiles", ref myNetworkInfo); });
+            Thread t23 = new Thread(delegate() { this.consoleCommandReadOutput("netsh ", "advfirewall show currentprofile", ref myNetworkInfo); });
             int myOSVersion = System.Environment.OSVersion.Version.Major;
 
             t1.Start();
@@ -191,6 +194,13 @@ namespace WinNetDiag
                     t20.Join();
                     t21.Start();
                     t21.Join();
+                }// endif
+                if (( myOSVersion > 5) & (myOSVersion < 10))
+                {
+                    t22.Start();
+                    t22.Join();
+                    t23.Start();
+                    t23.Join();
                 }// endif
             }// endif
             //t16.Start();
