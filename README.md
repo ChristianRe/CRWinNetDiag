@@ -1,5 +1,5 @@
 ## CRWinNetDiag
-Version 0.31; Public Beta Test
+Version 0.32; Public Beta Test
 
 ##Licence
 CRWinNetDiag; The Tool collects TCP/IP Information for futher Analysis
@@ -61,19 +61,21 @@ netsh  int ip show global
 netsh  int ipv4 show global 
 netsh  int ipv6 show global 
 netsh dump
+netsh  advfirewall show allprofiles
+netsh  advfirewall show currentprofile
 ```
 ##Sample Output provided by the Programm (at Windows 8.1 Pro German Version)
 ``` 
 ===============================================================
 
-CRWinNetDiag             Version: 0.31
+CRWinNetDiag             Version: 0.32
 DownloadLocation:        https://github.com/ChristianRe/CRWinNetDiag
 
-Date of Execution: 02.07.2015 21:51:27
+Date of Execution: 11.12.2016 16:14:32
 ===============================================================
 Product Name: Windows 8.1 Pro
 Current Version: 6.3
-Build Lab: 9600.winblue_r9.150322-1500
+Build Lab: 9600.winblue_ltsb.160930-0600
 SP laut .net: 
 Plattform laut .net: Microsoft Windows NT 6.2.9200.0
 ====================================== TCPIP Konfig ============================
@@ -1611,6 +1613,84 @@ set interface interface="wireless_41" forwarding=enabled advertise=enabled nud=e
 
 popd
 # Ende der IPv4-Konfiguration
+====================================== netsh  advfirewall show allprofiles =====
+
+Domänenprofil-Einstellungen:
+----------------------------------------------------------------------
+Status                                   EIN
+Firewallrichtlinie                       Eingehend blockieren,Ausgehend zulassen
+Lokale Firewallregeln                    Nicht zutreffend (nur für GRO-Speicher)
+Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur für GRO-Speicher)
+Eingehende Benutzerbenachrichtigung      Aktivieren
+Remoteverwaltung                         Deaktivieren
+Unicastantwort auf Multicast             Aktivieren
+
+Protokollierung:
+Zugelassene Verbindungen protokol.       Deaktivieren
+Getrennte Verbindungen protokollieren    Deaktivieren
+Dateiname                                %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+Max. Dateigröße                          4096
+
+
+Privates Profil-Einstellungen:
+----------------------------------------------------------------------
+Status                                   AUS
+Firewallrichtlinie                       Eingehend blockieren,Ausgehend zulassen
+Lokale Firewallregeln                    Nicht zutreffend (nur für GRO-Speicher)
+Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur für GRO-Speicher)
+Eingehende Benutzerbenachrichtigung      Aktivieren
+Remoteverwaltung                         Deaktivieren
+Unicastantwort auf Multicast             Aktivieren
+
+Protokollierung:
+Zugelassene Verbindungen protokol.       Deaktivieren
+Getrennte Verbindungen protokollieren    Deaktivieren
+Dateiname                                %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+Max. Dateigröße                          4096
+
+
+Öffentliches Profil-Einstellungen:
+----------------------------------------------------------------------
+Status                                   AUS
+Firewallrichtlinie                       Eingehend blockieren,Ausgehend zulassen
+Lokale Firewallregeln                    Nicht zutreffend (nur für GRO-Speicher)
+Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur für GRO-Speicher)
+Eingehende Benutzerbenachrichtigung      Aktivieren
+Remoteverwaltung                         Deaktivieren
+Unicastantwort auf Multicast             Aktivieren
+
+Protokollierung:
+Zugelassene Verbindungen protokol.       Deaktivieren
+Getrennte Verbindungen protokollieren    Deaktivieren
+Dateiname                                %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+Max. Dateigröße                          4096
+
+OK.
+
+________________________________________________________________________________
+
+
+====================================== netsh  advfirewall show currentprofile ==
+
+Privates Profil-Einstellungen:
+----------------------------------------------------------------------
+Status                                   AUS
+Firewallrichtlinie                       Eingehend blockieren,Ausgehend zulassen
+Lokale Firewallregeln                    Nicht zutreffend (nur für GRO-Speicher)
+Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur für GRO-Speicher)
+Eingehende Benutzerbenachrichtigung      Aktivieren
+Remoteverwaltung                         Deaktivieren
+Unicastantwort auf Multicast             Aktivieren
+
+Protokollierung:
+Zugelassene Verbindungen protokol.       Deaktivieren
+Getrennte Verbindungen protokollieren    Deaktivieren
+Dateiname                                %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+Max. Dateigröße                          4096
+
+OK.
+
+________________________________________________________________________________
 
 
 
