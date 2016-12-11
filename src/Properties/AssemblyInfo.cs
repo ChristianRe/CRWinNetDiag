@@ -41,7 +41,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("CRWinNetDiag")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -65,6 +65,6 @@ using System.Resources;
 // Sie können alle Werte angeben oder die standardmäßigen Build- und Revisionsnummern 
 // übernehmen, indem Sie "*" eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.2.4")]
-[assembly: AssemblyFileVersion("0.0.2.4")]
+[assembly: AssemblyVersion("0.0.3.2")]
+[assembly: AssemblyFileVersion("0.0.3.2")]
 [assembly: NeutralResourcesLanguageAttribute("de-DE")]
