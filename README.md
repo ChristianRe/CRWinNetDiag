@@ -4,7 +4,7 @@ Version 0.32; Public Beta Test
 ##Licence
 CRWinNetDiag; The Tool collects TCP/IP Information for futher Analysis
 
-Copyright (C) 2015  Christian Reusch
+Copyright (C) 2017  Christian Reusch
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -1613,6 +1613,7 @@ set interface interface="wireless_41" forwarding=enabled advertise=enabled nud=e
 
 popd
 # Ende der IPv4-Konfiguration
+```
 ====================================== netsh  advfirewall show allprofiles =====
 
 Domänenprofil-Einstellungen:
