@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.exe.config
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.exe.manifest
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.application
@@ -10,3 +11,17 @@ C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.pdb
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.csprojResolveAssemblyReference.cache
 C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.XML
+=======
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.exe.config
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.exe.manifest
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.application
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.exe
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.pdb
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.TrustInfo.xml
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.exe.manifest
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.application
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.exe
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.pdb
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\obj\Release\CRWinNetDiag.csprojResolveAssemblyReference.cache
+C:\Users\Hoschi\Documents\Visual Studio 2012\Projects\CRWinNetDiag\CRWinNetDiag\bin\Release\CRWinNetDiag.XML
+>>>>>>> 3356d6946bd9a802dbb03b8f08ff4c1ed1ea4e44
