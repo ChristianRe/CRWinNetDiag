@@ -21,7 +21,7 @@ rem it is possible to read the actual network configuration of windows host from
 rem Dieses Batch File startet das in der Public Beta Test Phase befindliche Programm CRWinNetDiag.exe.
 rem Mit Hilfe dieses Programms ist es möglich die aktuelle Windowskonfiguration bezüglich der Netzwerkeinstellungen auszulesen
 
-type Readme.txt
+type Licence.md
 
 
 CRWinNetDiag.exe > output.txt
