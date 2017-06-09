@@ -1700,6 +1700,7 @@ ________________________________________________________________________________
 
 =======
 ## CRWinNetDiag
+Version 0.32; Public Beta Test
 
 ##Licence
 CRWinNetDiag; The Tool collects TCP/IP Information for futher Analysis
@@ -1721,15 +1722,15 @@ along with this program.  If not, see <http:www.gnu.org/licenses/>.
 
 Diese Datei ist Teil von CRWinNetDiag.
 
-CRWinNetDiag ist Freie Software: Sie kÃ¶nnen es unter den Bedingungen
+CRWinNetDiag ist Freie Software: Sie können es unter den Bedingungen
 der GNU General Public License, wie von der Free Software Foundation,
-Version 3 der Lizenz oder (nach Ihrer Wahl) jeder spÃ¤teren
-verÃ¶ffentlichten Version, weiterverbreiten und/oder modifizieren.
+Version 3 der Lizenz oder (nach Ihrer Wahl) jeder späteren
+veröffentlichten Version, weiterverbreiten und/oder modifizieren.
 
-CRWinNetDiag wird in der Hoffnung, dass es nÃ¼tzlich sein wird, aber
+CRWinNetDiag wird in der Hoffnung, dass es nützlich sein wird, aber
 OHNE JEDE GEWAEHRLEISTUNG, bereitgestellt; sogar ohne die implizite
-GewÃ¤hrleistung der MARKTFAEHIGKEIT oder EIGNUNG FÃR EINEN BESTIMMTEN ZWECK.
-Siehe die GNU General Public License fÃ¼r weitere Details.
+Gewährleistung der MARKTFAEHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+Siehe die GNU General Public License für weitere Details.
 
 ## Start the programm
 The executable resides here **./bin/Release/CRWinNetDiag.exe** it needs at least .net3.5 to run.
@@ -1870,7 +1871,7 @@ DriverDateData                          System.Byte[]
 DriverDate                              10-31-2013
 DriverVersion                           6.3.9600.16453
 MatchingDeviceId                        usb\ms_comp_mbim
-DriverDesc                              Generischer Adapter fÃ¼r das mobile Breitband
+DriverDesc                              Generischer Adapter für das mobile Breitband
 RadioOff                                0
 LastDNSv4                               193.189.244.206 193.189.244.225 
 LastDNSv6                               
@@ -1989,7 +1990,7 @@ IfTypePreStart                          71
 --------------------------------------------------------------------------------
 *PMARPOffload                           1
 ----------------------Values *PMARPOffload--------------------------------------
-      ParamDesc                         ARP-Offload fÃ¼r WoWLAN
+      ParamDesc                         ARP-Offload für WoWLAN
       type                              enum
       default                           1
 -----Enum (Values that could be assigned to the parameter -- *PMARPOffload)-------------
@@ -1998,7 +1999,7 @@ IfTypePreStart                          71
 --------------------------------------------------------------------------------
 *PMNSOffload                            1
 ----------------------Values *PMNSOffload---------------------------------------
-      ParamDesc                         NS-Offload fÃ¼r WoWLAN
+      ParamDesc                         NS-Offload für WoWLAN
       type                              enum
       default                           1
 -----Enum (Values that could be assigned to the parameter -- *PMNSOffload)--------------
@@ -2007,7 +2008,7 @@ IfTypePreStart                          71
 --------------------------------------------------------------------------------
 *PMWiFiRekeyOffload                     1
 ----------------------Values *PMWiFiRekeyOffload--------------------------------
-      ParamDesc                         GTK fÃ¼hrt NeuverschlÃ¼sselung fÃ¼r WoWLAN durch
+      ParamDesc                         GTK führt Neuverschlüsselung für WoWLAN durch
       type                              enum
       default                           1
 -----Enum (Values that could be assigned to the parameter -- *PMWiFiRekeyOffload)-------
@@ -2025,7 +2026,7 @@ IfTypePreStart                          71
 --------------------------------------------------------------------------------
 *WakeOnPattern                          1
 ----------------------Values *WakeOnPattern-------------------------------------
-      ParamDesc                         Aktivierung durch MusterÃ¼bereinstimmung
+      ParamDesc                         Aktivierung durch Musterübereinstimmung
       type                              enum
       default                           1
 -----Enum (Values that could be assigned to the parameter -- *WakeOnPattern)------------
@@ -2064,7 +2065,7 @@ IbssQosEnabled                          0
 --------------------------------------------------------------------------------
 IbssTxPower                             100
 ----------------------Values IbssTxPower----------------------------------------
-      ParamDesc                         Ãbertragungsleistung
+      ParamDesc                         Übertragungsleistung
       Type                              enum
       Default                           100
       Optional                          0
@@ -2073,7 +2074,7 @@ IbssTxPower                             100
             25                          2. Mittel-niedrig
             50                          3. Mittel
             75                          4. Mittel-hoch
-            100                         5. Am hÃ¶chsten
+            100                         5. Am höchsten
 --------------------------------------------------------------------------------
 IEEE11nMode                             2
 ----------------------Values IEEE11nMode----------------------------------------
@@ -2106,7 +2107,7 @@ RoamAggressiveness                      2
             1                           2. Mittel-niedrig
             2                           3. Mittel
             3                           4. Mittel-hoch
-            4                           5. Am hÃ¶chsten
+            4                           5. Am höchsten
 --------------------------------------------------------------------------------
 RoamingPreferredBandType                2
 ----------------------Values RoamingPreferredBandType---------------------------
@@ -2147,7 +2148,7 @@ IoacDebugFlags                          1
 vhtCapabilities                         58749218
 *PacketCoalescing                       1
 ----------------------Values *PacketCoalescing----------------------------------
-      ParamDesc                         PaketzusammenfÃ¼gung
+      ParamDesc                         Paketzusammenfügung
       type                              enum
       default                           1
 -----Enum (Values that could be assigned to the parameter -- *PacketCoalescing)---------
@@ -2195,7 +2196,7 @@ ChannelMaskBand24G                      2047
 SwRadioState                            1
 ChannelWidth24                          1
 ----------------------Values ChannelWidth24-------------------------------------
-      ParamDesc                         802.11n Kanalbreite fÃ¼r 2.4 GHz
+      ParamDesc                         802.11n Kanalbreite für 2.4 GHz
       Type                              enum
       Default                           1
       Optional                          0
@@ -2205,7 +2206,7 @@ ChannelWidth24                          1
 --------------------------------------------------------------------------------
 ChannelWidth52                          1
 ----------------------Values ChannelWidth52-------------------------------------
-      ParamDesc                         802.11n Kanalbreite fÃ¼r 5.2 GHz
+      ParamDesc                         802.11n Kanalbreite für 5.2 GHz
       Type                              enum
       Default                           1
       Optional                          0
@@ -2215,7 +2216,7 @@ ChannelWidth52                          1
 --------------------------------------------------------------------------------
 uAPSDSupport                            0
 ----------------------Values uAPSDSupport---------------------------------------
-      ParamDesc                         U-APSD-UnterstÃ¼tzung
+      ParamDesc                         U-APSD-Unterstützung
       Type                              enum
       Optional                          0
       Default                           0
@@ -2236,7 +2237,7 @@ ProcessLSCinWorkItem                    1
 Enable9KJFTpt                           1
 LinkNegotiationProcess                  1
 ----------------------Values LinkNegotiationProcess-----------------------------
-      ParamDesc                         KompatibilitÃ¤tsmodus fÃ¼r Ã¤ltere Switches
+      ParamDesc                         Kompatibilitätsmodus für ältere Switches
       default                           1
       type                              enum
 -----Enum (Values that could be assigned to the parameter -- LinkNegotiationProcess)----
@@ -2273,7 +2274,7 @@ IfTypePreStart                          6
 --------------------------------------------------------------------------------
 *IPChecksumOffloadIPv4                  3
 ----------------------Values *IPChecksumOffloadIPv4-----------------------------
-      ParamDesc                         IPv4-PrÃ¼fsummen abladen
+      ParamDesc                         IPv4-Prüfsummen abladen
       default                           3
       type                              enum
 -----Enum (Values that could be assigned to the parameter -- *IPChecksumOffloadIPv4)----
@@ -2330,14 +2331,14 @@ IfTypePreStart                          6
 --------------------------------------------------------------------------------
 *PriorityVLANTag                        3
 ----------------------Values *PriorityVLANTag-----------------------------------
-      ParamDesc                         PaketprioritÃ¤t und VLAN
+      ParamDesc                         Paketpriorität und VLAN
       default                           3
       type                              enum
 -----Enum (Values that could be assigned to the parameter -- *PriorityVLANTag)----------
-            0                           PaketprioritÃ¤t und VLAN deaktiviert
-            1                           PaketprioritÃ¤t aktiviert
+            0                           Paketpriorität und VLAN deaktiviert
+            1                           Paketpriorität aktiviert
             2                           VLAN aktiviert
-            3                           PaketprioritÃ¤t und VLAN aktiviert
+            3                           Paketpriorität und VLAN aktiviert
 --------------------------------------------------------------------------------
 *ReceiveBuffers                         256
 ----------------------Values *ReceiveBuffers------------------------------------
@@ -2373,7 +2374,7 @@ IfTypePreStart                          6
 --------------------------------------------------------------------------------
 *TCPChecksumOffloadIPv4                 3
 ----------------------Values *TCPChecksumOffloadIPv4----------------------------
-      ParamDesc                         TCP-PrÃ¼fsummen abladen (IPv4)
+      ParamDesc                         TCP-Prüfsummen abladen (IPv4)
       default                           3
       type                              enum
 -----Enum (Values that could be assigned to the parameter -- *TCPChecksumOffloadIPv4)---
@@ -2384,7 +2385,7 @@ IfTypePreStart                          6
 --------------------------------------------------------------------------------
 *TCPChecksumOffloadIPv6                 3
 ----------------------Values *TCPChecksumOffloadIPv6----------------------------
-      ParamDesc                         TCP-PrÃ¼fsummen abladen (IPv6)
+      ParamDesc                         TCP-Prüfsummen abladen (IPv6)
       default                           3
       type                              enum
 -----Enum (Values that could be assigned to the parameter -- *TCPChecksumOffloadIPv6)---
@@ -2395,7 +2396,7 @@ IfTypePreStart                          6
 --------------------------------------------------------------------------------
 *TransmitBuffers                        512
 ----------------------Values *TransmitBuffers-----------------------------------
-      ParamDesc                         Ãbertragungspuffer
+      ParamDesc                         Übertragungspuffer
       default                           512
       min                               80
       max                               2048
@@ -2405,7 +2406,7 @@ IfTypePreStart                          6
 --------------------------------------------------------------------------------
 *UDPChecksumOffloadIPv4                 3
 ----------------------Values *UDPChecksumOffloadIPv4----------------------------
-      ParamDesc                         UDP-PrÃ¼fsummen abladen (IPv4)
+      ParamDesc                         UDP-Prüfsummen abladen (IPv4)
       default                           3
       type                              enum
 -----Enum (Values that could be assigned to the parameter -- *UDPChecksumOffloadIPv4)---
@@ -2416,7 +2417,7 @@ IfTypePreStart                          6
 --------------------------------------------------------------------------------
 *UDPChecksumOffloadIPv6                 3
 ----------------------Values *UDPChecksumOffloadIPv6----------------------------
-      ParamDesc                         UDP-PrÃ¼fsummen abladen (IPv6)
+      ParamDesc                         UDP-Prüfsummen abladen (IPv6)
       default                           3
       type                              enum
 -----Enum (Values that could be assigned to the parameter -- *UDPChecksumOffloadIPv6)---
@@ -2530,7 +2531,7 @@ WakeOnSlot                              0
 --------------------------------------------------------------------------------
 *WakeOnMagicPacket                      1
 ----------------------Values *WakeOnMagicPacket---------------------------------
-      ParamDesc                         Akt. Ã¼ber Magic Packet
+      ParamDesc                         Akt. über Magic Packet
       type                              enum
       default                           1
 -----Enum (Values that could be assigned to the parameter -- *WakeOnMagicPacket)--------
@@ -2539,7 +2540,7 @@ WakeOnSlot                              0
 --------------------------------------------------------------------------------
 *WakeOnPattern                          1
 ----------------------Values *WakeOnPattern-------------------------------------
-      ParamDesc                         Akt. bei MusterÃ¼bereinstimmung
+      ParamDesc                         Akt. bei Musterübereinstimmung
       type                              enum
       default                           1
 -----Enum (Values that could be assigned to the parameter -- *WakeOnPattern)------------
@@ -2630,29 +2631,29 @@ ________________________________________________________________________________
 Aktive Verbindungen
 
   Proto  Lokale Adresse         Remoteadresse          Status           PID
-  TCP    0.0.0.0:80             0.0.0.0:0              ABHÃREN         4
-  TCP    0.0.0.0:135            0.0.0.0:0              ABHÃREN         624
-  TCP    0.0.0.0:445            0.0.0.0:0              ABHÃREN         4
-  TCP    0.0.0.0:554            0.0.0.0:0              ABHÃREN         1472
-  TCP    0.0.0.0:623            0.0.0.0:0              ABHÃREN         2560
-  TCP    0.0.0.0:1110           0.0.0.0:0              ABHÃREN         2588
-  TCP    0.0.0.0:2869           0.0.0.0:0              ABHÃREN         4
-  TCP    0.0.0.0:5366           0.0.0.0:0              ABHÃREN         5556
-  TCP    0.0.0.0:6369           0.0.0.0:0              ABHÃREN         3484
-  TCP    0.0.0.0:8080           0.0.0.0:0              ABHÃREN         4
-  TCP    0.0.0.0:9191           0.0.0.0:0              ABHÃREN         4
-  TCP    0.0.0.0:10243          0.0.0.0:0              ABHÃREN         4
-  TCP    0.0.0.0:12321          0.0.0.0:0              ABHÃREN         2588
-  TCP    0.0.0.0:16992          0.0.0.0:0              ABHÃREN         2560
-  TCP    0.0.0.0:31067          0.0.0.0:0              ABHÃREN         2816
-  TCP    0.0.0.0:49152          0.0.0.0:0              ABHÃREN         920
-  TCP    0.0.0.0:49153          0.0.0.0:0              ABHÃREN         1216
-  TCP    0.0.0.0:49154          0.0.0.0:0              ABHÃREN         1256
-  TCP    0.0.0.0:49155          0.0.0.0:0              ABHÃREN         2068
-  TCP    0.0.0.0:49159          0.0.0.0:0              ABHÃREN         992
-  TCP    0.0.0.0:49166          0.0.0.0:0              ABHÃREN         984
-  TCP    0.0.0.0:50182          0.0.0.0:0              ABHÃREN         3164
-  TCP    127.0.0.1:515          0.0.0.0:0              ABHÃREN         7608
+  TCP    0.0.0.0:80             0.0.0.0:0              ABHÖREN         4
+  TCP    0.0.0.0:135            0.0.0.0:0              ABHÖREN         624
+  TCP    0.0.0.0:445            0.0.0.0:0              ABHÖREN         4
+  TCP    0.0.0.0:554            0.0.0.0:0              ABHÖREN         1472
+  TCP    0.0.0.0:623            0.0.0.0:0              ABHÖREN         2560
+  TCP    0.0.0.0:1110           0.0.0.0:0              ABHÖREN         2588
+  TCP    0.0.0.0:2869           0.0.0.0:0              ABHÖREN         4
+  TCP    0.0.0.0:5366           0.0.0.0:0              ABHÖREN         5556
+  TCP    0.0.0.0:6369           0.0.0.0:0              ABHÖREN         3484
+  TCP    0.0.0.0:8080           0.0.0.0:0              ABHÖREN         4
+  TCP    0.0.0.0:9191           0.0.0.0:0              ABHÖREN         4
+  TCP    0.0.0.0:10243          0.0.0.0:0              ABHÖREN         4
+  TCP    0.0.0.0:12321          0.0.0.0:0              ABHÖREN         2588
+  TCP    0.0.0.0:16992          0.0.0.0:0              ABHÖREN         2560
+  TCP    0.0.0.0:31067          0.0.0.0:0              ABHÖREN         2816
+  TCP    0.0.0.0:49152          0.0.0.0:0              ABHÖREN         920
+  TCP    0.0.0.0:49153          0.0.0.0:0              ABHÖREN         1216
+  TCP    0.0.0.0:49154          0.0.0.0:0              ABHÖREN         1256
+  TCP    0.0.0.0:49155          0.0.0.0:0              ABHÖREN         2068
+  TCP    0.0.0.0:49159          0.0.0.0:0              ABHÖREN         992
+  TCP    0.0.0.0:49166          0.0.0.0:0              ABHÖREN         984
+  TCP    0.0.0.0:50182          0.0.0.0:0              ABHÖREN         3164
+  TCP    127.0.0.1:515          0.0.0.0:0              ABHÖREN         7608
   TCP    127.0.0.1:1110         127.0.0.1:53588        HERGESTELLT     2588
   TCP    127.0.0.1:1110         127.0.0.1:53596        HERGESTELLT     2588
   TCP    127.0.0.1:1110         127.0.0.1:54386        HERGESTELLT     2588
@@ -2684,11 +2685,11 @@ Aktive Verbindungen
   TCP    127.0.0.1:2869         127.0.0.1:55096        WARTEND         0
   TCP    127.0.0.1:2869         127.0.0.1:55098        WARTEND         0
   TCP    127.0.0.1:2869         127.0.0.1:55099        WARTEND         0
-  TCP    127.0.0.1:5354         0.0.0.0:0              ABHÃREN         2688
+  TCP    127.0.0.1:5354         0.0.0.0:0              ABHÖREN         2688
   TCP    127.0.0.1:5354         127.0.0.1:53494        HERGESTELLT     2688
   TCP    127.0.0.1:5354         127.0.0.1:53495        HERGESTELLT     2688
   TCP    127.0.0.1:5354         127.0.0.1:53548        HERGESTELLT     2688
-  TCP    127.0.0.1:49397        0.0.0.0:0              ABHÃREN         2560
+  TCP    127.0.0.1:49397        0.0.0.0:0              ABHÖREN         2560
   TCP    127.0.0.1:53494        127.0.0.1:5354         HERGESTELLT     12276
   TCP    127.0.0.1:53495        127.0.0.1:5354         HERGESTELLT     12276
   TCP    127.0.0.1:53548        127.0.0.1:5354         HERGESTELLT     12276
@@ -2702,28 +2703,28 @@ Aktive Verbindungen
   TCP    127.0.0.1:55091        127.0.0.1:1110         HERGESTELLT     8464
   TCP    192.168.2.104:55101    192.168.2.105:9080     WARTEND         0
   TCP    192.168.2.104:55102    192.168.2.105:38412    WARTEND         0
-  TCP    [::]:80                [::]:0                 ABHÃREN         4
-  TCP    [::]:135               [::]:0                 ABHÃREN         624
-  TCP    [::]:445               [::]:0                 ABHÃREN         4
-  TCP    [::]:554               [::]:0                 ABHÃREN         1472
-  TCP    [::]:623               [::]:0                 ABHÃREN         2560
-  TCP    [::]:1110              [::]:0                 ABHÃREN         2588
-  TCP    [::]:2869              [::]:0                 ABHÃREN         4
-  TCP    [::]:8080              [::]:0                 ABHÃREN         4
-  TCP    [::]:9191              [::]:0                 ABHÃREN         4
-  TCP    [::]:10243             [::]:0                 ABHÃREN         4
-  TCP    [::]:12321             [::]:0                 ABHÃREN         2588
-  TCP    [::]:16992             [::]:0                 ABHÃREN         2560
-  TCP    [::]:49152             [::]:0                 ABHÃREN         920
-  TCP    [::]:49153             [::]:0                 ABHÃREN         1216
-  TCP    [::]:49154             [::]:0                 ABHÃREN         1256
-  TCP    [::]:49155             [::]:0                 ABHÃREN         2068
-  TCP    [::]:49159             [::]:0                 ABHÃREN         992
-  TCP    [::]:49166             [::]:0                 ABHÃREN         984
-  TCP    [::]:50182             [::]:0                 ABHÃREN         3164
+  TCP    [::]:80                [::]:0                 ABHÖREN         4
+  TCP    [::]:135               [::]:0                 ABHÖREN         624
+  TCP    [::]:445               [::]:0                 ABHÖREN         4
+  TCP    [::]:554               [::]:0                 ABHÖREN         1472
+  TCP    [::]:623               [::]:0                 ABHÖREN         2560
+  TCP    [::]:1110              [::]:0                 ABHÖREN         2588
+  TCP    [::]:2869              [::]:0                 ABHÖREN         4
+  TCP    [::]:8080              [::]:0                 ABHÖREN         4
+  TCP    [::]:9191              [::]:0                 ABHÖREN         4
+  TCP    [::]:10243             [::]:0                 ABHÖREN         4
+  TCP    [::]:12321             [::]:0                 ABHÖREN         2588
+  TCP    [::]:16992             [::]:0                 ABHÖREN         2560
+  TCP    [::]:49152             [::]:0                 ABHÖREN         920
+  TCP    [::]:49153             [::]:0                 ABHÖREN         1216
+  TCP    [::]:49154             [::]:0                 ABHÖREN         1256
+  TCP    [::]:49155             [::]:0                 ABHÖREN         2068
+  TCP    [::]:49159             [::]:0                 ABHÖREN         992
+  TCP    [::]:49166             [::]:0                 ABHÖREN         984
+  TCP    [::]:50182             [::]:0                 ABHÖREN         3164
   TCP    [::1]:1110             [::1]:53601            HERGESTELLT     2588
   TCP    [::1]:1110             [::1]:53605            HERGESTELLT     2588
-  TCP    [::1]:49396            [::]:0                 ABHÃREN         6864
+  TCP    [::1]:49396            [::]:0                 ABHÖREN         6864
   TCP    [::1]:53449            [::1]:53451            HERGESTELLT     2560
   TCP    [::1]:53451            [::1]:53449            HERGESTELLT     2560
   TCP    [::1]:53601            [::1]:1110             HERGESTELLT     8464
@@ -2832,7 +2833,7 @@ IPv4-Statistik
   Weitergeleitete Datagramme           = 0
   Empfangene unbekannte Protokolle     = 0
   Empfangene verworfene Pakete         = 77006
-  Empfangene Ã¼bermittelte Pakete       = 510996
+  Empfangene übermittelte Pakete       = 510996
   Ausgabeanforderungen                 = 603259
   Verworfene Routingpakete             = 0
   Verworfene Ausgabepakete             = 256
@@ -2852,7 +2853,7 @@ IPv6-Statistik
   Weitergeleitete Datagramme           = 0
   Empfangene unbekannte Protokolle     = 0
   Empfangene verworfene Pakete         = 10382
-  Empfangene Ã¼bermittelte Pakete       = 143586
+  Empfangene übermittelte Pakete       = 143586
   Ausgabeanforderungen                 = 169025
   Verworfene Routingpakete             = 0
   Verworfene Ausgabepakete             = 64
@@ -2870,18 +2871,18 @@ ICMPv4-Statistik
   Meldungen                 368         481       
   Fehler                    0           0         
   Ziel nicht erreichbar     368         479       
-  ZeitÃ¼berschreitung        0           0         
+  Zeitüberschreitung        0           0         
   Parameterprobleme         0           0         
   Quelldrosselung           0           0         
   Umleitungen               0           0         
   Echoantworten             0           0         
   Echos                     0           2         
-  ZeiteintrÃ¤ge              0           0         
+  Zeiteinträge              0           0         
   Zeiteintragantworten      0           0         
   Adressmasken              0           0         
   Adressmaskenantworten     0           0         
   Routeranfragen            0           0         
-  RouterankÃ¼ndigungen       0           0         
+  Routerankündigungen       0           0         
 
 ICMPv6-Statistik
 
@@ -2889,8 +2890,8 @@ ICMPv6-Statistik
   Meldungen                 8246        2150      
   Fehler                    0           0         
   Ziel nicht erreichbar     11          128       
-  Paket zu groÃ             0           0         
-  ZeitÃ¼berschreitung        0           0         
+  Paket zu groß             0           0         
+  Zeitüberschreitung        0           0         
   Parameterprobleme         0           0         
   Echos                     0           0         
   Echoantworten             0           0         
@@ -2898,45 +2899,45 @@ ICMPv6-Statistik
   MLD-Berichte              1105        0         
   MLD-Beendigungen          0           0         
   Routeranfragen            0           52        
-  RouterankÃ¼ndigungen       781         0         
+  Routerankündigungen       781         0         
   Nachbaranfragen           1518        678       
-  NachbarankÃ¼ndigungen      4112        1292      
+  Nachbarankündigungen      4112        1292      
   Umleitungen               0           0         
   Routerneunummerierungen    0           0         
 
-TCP-Statistik fÃ¼r IPv4
+TCP-Statistik für IPv4
 
-  Aktiv geÃ¶ffnet                      = 40587
-  Passiv geÃ¶ffnet                     = 18863
+  Aktiv geöffnet                      = 40587
+  Passiv geöffnet                     = 18863
   Erfolglose Verbindungsversuche      = 1404
-  ZurÃ¼ckgesetzte Verbindungen         = 2190
+  Zurückgesetzte Verbindungen         = 2190
   Aktuelle Verbindungen               = 26
   Empfangene Segmente                 = 872808
   Gesendete Segmente                  = 759187
-  Erneut Ã¼bertragene Segmente         = 24298
+  Erneut übertragene Segmente         = 24298
 
-TCP-Statistik fÃ¼r IPv6
+TCP-Statistik für IPv6
 
-  Aktiv geÃ¶ffnet                      = 5798
-  Passiv geÃ¶ffnet                     = 3022
+  Aktiv geöffnet                      = 5798
+  Passiv geöffnet                     = 3022
   Erfolglose Verbindungsversuche      = 66
-  ZurÃ¼ckgesetzte Verbindungen         = 902
+  Zurückgesetzte Verbindungen         = 902
   Aktuelle Verbindungen               = 10
   Empfangene Segmente                 = 373777
   Gesendete Segmente                  = 319665
-  Erneut Ã¼bertragene Segmente         = 6414
+  Erneut übertragene Segmente         = 6414
 
-UDP-Statistik fÃ¼r IPv4
+UDP-Statistik für IPv4
 
   Empfangene Datagramme = 111840
-  Keine AnschlÃ¼sse      = 76471
+  Keine Anschlüsse      = 76471
   Empfangsfehler        = 499
   Gesendete Datagramme  = 110345
 
-UDP-Statistik fÃ¼r IPv6
+UDP-Statistik für IPv6
 
   Empfangene Datagramme = 12986
-  Keine AnschlÃ¼sse      = 9515
+  Keine Anschlüsse      = 9515
   Empfangsfehler        = 39
   Gesendete Datagramme  = 23181
 ________________________________________________________________________________
@@ -2947,7 +2948,7 @@ ________________________________________________________________________________
 Schnittstellenliste
  37...2a b2 bd a7 67 ff ......Von Microsoft gehosteter, virtueller Netzwerkadapter
   6...b0 85 b3 5d 5d 47 ......Sierra Wireless EM7345 4G LTE
-  5...28 b2 bd a7 67 00 ......Virtueller Microsoft-Adapter fÃ¼r direktes WiFi
+  5...28 b2 bd a7 67 00 ......Virtueller Microsoft-Adapter für direktes WiFi
   4...28 b2 bd a7 67 ff ......Intel(R) Dual Band Wireless-AC 7260
   3...54 ee 75 26 66 a8 ......Intel(R) Ethernet Connection I217-LM
   9...08 00 27 00 18 5f ......VirtualBox Host-Only Ethernet Adapter
@@ -2969,7 +2970,7 @@ Aktive Routen:
   255.255.255.255  255.255.255.255   Auf Verbindung         127.0.0.1    306
    255.255.255.255  255.255.255.255   Auf Verbindung     192.168.2.104    266
 ===========================================================================
-StÃ¤ndige Routen:
+Ständige Routen:
   Keine
 
 IPv6-Routentabelle
@@ -2979,7 +2980,7 @@ Aktive Routen:
   4    266 ::/0                     fe80::1
   1    306 ::1/128                  Auf Verbindung
  ===========================================================================
-StÃ¤ndige Routen:
+Ständige Routen:
   Keine
 ________________________________________________________________________________
 
@@ -2989,7 +2990,7 @@ ________________________________________________________________________________
 Windows-IP-Konfiguration
 
    Hostname  . . . . . . . . . . . . : xxxxxxxxxx-TP
-   PrimÃ¤res DNS-Suffix . . . . . . . : 
+   Primäres DNS-Suffix . . . . . . . : 
    Knotentyp . . . . . . . . . . . . : Hybrid
    IP-Routing aktiviert  . . . . . . : Nein
    WINS-Proxy aktiviert  . . . . . . : Nein
@@ -3018,7 +3019,7 @@ Drahtlos-LAN-Adapter LAN-Verbindung* 1:
 
    Medienstatus. . . . . . . . . . . : Medium getrennt
    Verbindungsspezifisches DNS-Suffix: 
-   Beschreibung. . . . . . . . . . . : Virtueller Microsoft-Adapter fÃ¼r direktes WiFi
+   Beschreibung. . . . . . . . . . . : Virtueller Microsoft-Adapter für direktes WiFi
    Physische Adresse . . . . . . . . : 28-B2-BD-A7-67-00
    DHCP aktiviert. . . . . . . . . . : Nein
    Autokonfiguration aktiviert . . . : Ja
@@ -3032,13 +3033,13 @@ Drahtlos-LAN-Adapter WiFi:
    Autokonfiguration aktiviert . . . : Ja
    IPv6-Adresse. . . . . . . . . . . : 
    IPv6-Adresse. . . . . . . . . . . :  
-   TemporÃ¤re IPv6-Adresse. . . . . . : 
-   TemporÃ¤re IPv6-Adresse. . . . . . :  
+   Temporäre IPv6-Adresse. . . . . . : 
+   Temporäre IPv6-Adresse. . . . . . :  
    Verbindungslokale IPv6-Adresse  . : fe80::40b6:2263:3153:b4ab%4(Bevorzugt) 
    IPv4-Adresse  . . . . . . . . . . : 192.168.2.104(Bevorzugt) 
    Subnetzmaske  . . . . . . . . . . : 255.255.255.0
    Lease erhalten. . . . . . . . . . : Montag, 18. Mai 2015 21:32:35
-   Lease lÃ¤uft ab. . . . . . . . . . : Montag, 8. Juni 2015 21:32:35
+   Lease läuft ab. . . . . . . . . . : Montag, 8. Juni 2015 21:32:35
    Standardgateway . . . . . . . . . : fe80::1%4
                                        192.168.2.1
    DHCP-Server . . . . . . . . . . . : 192.168.2.1
@@ -3046,7 +3047,7 @@ Drahtlos-LAN-Adapter WiFi:
    DHCPv6-Client-DUID. . . . . . . . : 00-01-00-01-1B-D1-FB-CC-54-EE-75-26-66-A8
    DNS-Server  . . . . . . . . . . . : fe80::1%4
                                        192.168.2.1
-   NetBIOS Ã¼ber TCP/IP . . . . . . . : Deaktiviert
+   NetBIOS über TCP/IP . . . . . . . : Deaktiviert
 
 Ethernet-Adapter Ethernet:
 
@@ -3071,7 +3072,7 @@ Ethernet-Adapter VirtualBox Host-Only Network:
    DHCPv6-IAID . . . . . . . . . . . : 151519271
    DHCPv6-Client-DUID. . . . . . . . : 00-01-00-01-1B-D1-FB-CC-54-EE-75-26-66-A8
    DNS-Server  . . . . . . . . . . . :  
-   NetBIOS Ã¼ber TCP/IP . . . . . . . : Deaktiviert
+   NetBIOS über TCP/IP . . . . . . . : Deaktiviert
 ________________________________________________________________________________
 
 
@@ -3091,7 +3092,7 @@ Schnittstelle: 0.0.0.0 --- 0xffffffff
 
 Schnittstelle: 192.168.2.104 --- 0x4
   Internetadresse       Physische Adresse     Typ
-  10.56.35.1            00-00-00-00-00-00     ungÃ¼ltig  
+  10.56.35.1            00-00-00-00-00-00     ungültig  
   192.168.2.1           18-83-bf-23-09-e8     dynamisch 
   192.168.2.22          00-00-f0-a6-b2-d8     dynamisch 
   192.168.2.101         18-8e-d5-01-e0-c5     dynamisch 
@@ -3131,7 +3132,7 @@ ________________________________________________________________________________
 
 Abbildname                     PID Sitzungsname       Sitz.-Nr. Speichernutzung Status          Benutzername                                           CPU-Zeit Fenstertitel                                                            
 ========================= ======== ================ =========== =============== =============== ================================================== ============ ========================================================================
-System Idle Process              0 Services                   0             4 K Unknown         NT-AUTORITÃT\SYSTEM                                   248:06:16 Nicht zutreffend                                                        
+System Idle Process              0 Services                   0             4 K Unknown         NT-AUTORITÄT\SYSTEM                                   248:06:16 Nicht zutreffend                                                        
 System                           4 Services                   0        19.204 K Unknown         Nicht zutreffend                                        0:14:52 Nicht zutreffend                                                        
 smss.exe                       620 Services                   0           976 K Unknown         Nicht zutreffend                                        0:00:00 Nicht zutreffend                                                        
 csrss.exe                      812 Services                   0         5.232 K Unknown         Nicht zutreffend                                        0:00:18 Nicht zutreffend                                                        
@@ -3148,7 +3149,7 @@ Sitzungsname:    Services
 Sitz.-Nr.:       0
 Speichernutzung: 4 K
 Status:          Unknown
-Benutzername:    NT-AUTORITÃT\SYSTEM
+Benutzername:    NT-AUTORITÄT\SYSTEM
 CPU-Zeit:        248:06:33
 Fenstertitel:    Nicht zutreffend
 
@@ -3189,19 +3190,19 @@ Chimney-Abladezustand                     : disabled
 NetDMA-Zustand                            : disabled
 Direkter Cachezugriff (DCA)               : disabled
 Autom. Abstimmungsgrad Empfangsfenster    : normal
-Add-On "Ãberlastungssteuerungsanbieter"   : none
+Add-On "Überlastungssteuerungsanbieter"   : none
 ECN-Funktion                              : disabled
 RFC 1323-Zeitstempel                      : disabled
-RTO (anfÃ¤nglich)                          : 3000
-Zustand der EmpfangssegmentzusammenfÃ¼gung : disabled
-Nicht-SACK-RTT-WiderstandsfÃ¤higkeit              : disabled 
-Maximale SYN-NeuÃ¼bertragungen             : 2 
+RTO (anfänglich)                          : 3000
+Zustand der Empfangssegmentzusammenfügung : disabled
+Nicht-SACK-RTT-Widerstandsfähigkeit              : disabled 
+Maximale SYN-Neuübertragungen             : 2 
 
 ________________________________________________________________________________
 
 
 ====================================== netsh  int tcp show heuristics ==========
-TCP-Parameter fÃ¼r die Fensterskalierungsheuristik
+TCP-Parameter für die Fensterskalierungsheuristik
 ----------------------------------------------
 Fensterskalierungsheuristik         : disabled 
 Qualifizierende Zielschwelle  : 3 
@@ -3220,8 +3221,8 @@ Der aktive Status wird abgefragt...
 Allgemeine globale Parameter
 ---------------------------------------------
 Standardabschnittslimit                   : 128 Abschnitte
-Nachbarcachelimit                         : 256 EintrÃ¤ge pro Schnittstelle
-Routecachelimit                           : 128 EintrÃ¤ge pro Depot
+Nachbarcachelimit                         : 256 Einträge pro Schnittstelle
+Routecachelimit                           : 128 Einträge pro Depot
 Reassemblierungslimit                     : 66105504 Bytes
 ICMP-Umleitungen                          : enabled
 Quellroutingverhalten                     : dontforward
@@ -3232,7 +3233,7 @@ MLD-Ebene                                 : all
 MLD-Version                               : version3
 Multicastweiterleitung                    : disabled
 Gruppenweiterleitungsfragmente            : disabled
-IDs zufÃ¤llig anordnen                     : enabled
+IDs zufällig anordnen                     : enabled
 Adressmaskenantwort                       : disabled
 Mindest-MTU                               : 576
 
@@ -3251,8 +3252,8 @@ Der aktive Status wird abgefragt...
 Allgemeine globale Parameter
 ---------------------------------------------
 Standardabschnittslimit                   : 128 Abschnitte
-Nachbarcachelimit                         : 256 EintrÃ¤ge pro Schnittstelle
-Routecachelimit                           : 128 EintrÃ¤ge pro Depot
+Nachbarcachelimit                         : 256 Einträge pro Schnittstelle
+Routecachelimit                           : 128 Einträge pro Depot
 Reassemblierungslimit                     : 66105504 Bytes
 ICMP-Umleitungen                          : enabled
 Quellroutingverhalten                     : dontforward
@@ -3263,7 +3264,7 @@ MLD-Ebene                                 : all
 MLD-Version                               : version3
 Multicastweiterleitung                    : disabled
 Gruppenweiterleitungsfragmente            : disabled
-IDs zufÃ¤llig anordnen                     : enabled
+IDs zufällig anordnen                     : enabled
 Adressmaskenantwort                       : disabled
 Mindest-MTU                               : 1280
 
@@ -3316,12 +3317,12 @@ popd
 ```
 ====================================== netsh  advfirewall show allprofiles =====
 
-DomÃ¤nenprofil-Einstellungen:
+Domänenprofil-Einstellungen:
 ----------------------------------------------------------------------
 Status                                   EIN
 Firewallrichtlinie                       Eingehend blockieren,Ausgehend zulassen
-Lokale Firewallregeln                    Nicht zutreffend (nur fÃ¼r GRO-Speicher)
-Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur fÃ¼r GRO-Speicher)
+Lokale Firewallregeln                    Nicht zutreffend (nur für GRO-Speicher)
+Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur für GRO-Speicher)
 Eingehende Benutzerbenachrichtigung      Aktivieren
 Remoteverwaltung                         Deaktivieren
 Unicastantwort auf Multicast             Aktivieren
@@ -3330,15 +3331,15 @@ Protokollierung:
 Zugelassene Verbindungen protokol.       Deaktivieren
 Getrennte Verbindungen protokollieren    Deaktivieren
 Dateiname                                %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-Max. DateigrÃ¶Ãe                          4096
+Max. Dateigröße                          4096
 
 
 Privates Profil-Einstellungen:
 ----------------------------------------------------------------------
 Status                                   AUS
 Firewallrichtlinie                       Eingehend blockieren,Ausgehend zulassen
-Lokale Firewallregeln                    Nicht zutreffend (nur fÃ¼r GRO-Speicher)
-Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur fÃ¼r GRO-Speicher)
+Lokale Firewallregeln                    Nicht zutreffend (nur für GRO-Speicher)
+Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur für GRO-Speicher)
 Eingehende Benutzerbenachrichtigung      Aktivieren
 Remoteverwaltung                         Deaktivieren
 Unicastantwort auf Multicast             Aktivieren
@@ -3347,15 +3348,15 @@ Protokollierung:
 Zugelassene Verbindungen protokol.       Deaktivieren
 Getrennte Verbindungen protokollieren    Deaktivieren
 Dateiname                                %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-Max. DateigrÃ¶Ãe                          4096
+Max. Dateigröße                          4096
 
 
-Ãffentliches Profil-Einstellungen:
+Öffentliches Profil-Einstellungen:
 ----------------------------------------------------------------------
 Status                                   AUS
 Firewallrichtlinie                       Eingehend blockieren,Ausgehend zulassen
-Lokale Firewallregeln                    Nicht zutreffend (nur fÃ¼r GRO-Speicher)
-Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur fÃ¼r GRO-Speicher)
+Lokale Firewallregeln                    Nicht zutreffend (nur für GRO-Speicher)
+Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur für GRO-Speicher)
 Eingehende Benutzerbenachrichtigung      Aktivieren
 Remoteverwaltung                         Deaktivieren
 Unicastantwort auf Multicast             Aktivieren
@@ -3364,7 +3365,7 @@ Protokollierung:
 Zugelassene Verbindungen protokol.       Deaktivieren
 Getrennte Verbindungen protokollieren    Deaktivieren
 Dateiname                                %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-Max. DateigrÃ¶Ãe                          4096
+Max. Dateigröße                          4096
 
 OK.
 
@@ -3377,8 +3378,8 @@ Privates Profil-Einstellungen:
 ----------------------------------------------------------------------
 Status                                   AUS
 Firewallrichtlinie                       Eingehend blockieren,Ausgehend zulassen
-Lokale Firewallregeln                    Nicht zutreffend (nur fÃ¼r GRO-Speicher)
-Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur fÃ¼r GRO-Speicher)
+Lokale Firewallregeln                    Nicht zutreffend (nur für GRO-Speicher)
+Lokale Verbindungssicherheitsregeln      Nicht zutreffend (nur für GRO-Speicher)
 Eingehende Benutzerbenachrichtigung      Aktivieren
 Remoteverwaltung                         Deaktivieren
 Unicastantwort auf Multicast             Aktivieren
@@ -3387,7 +3388,7 @@ Protokollierung:
 Zugelassene Verbindungen protokol.       Deaktivieren
 Getrennte Verbindungen protokollieren    Deaktivieren
 Dateiname                                %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-Max. DateigrÃ¶Ãe                          4096
+Max. Dateigröße                          4096
 
 OK.
 
